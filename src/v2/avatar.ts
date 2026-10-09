@@ -6,8 +6,10 @@
  *
  * The base URL lives HERE rather than in each app's env because it is the same
  * fact for every consumer, and pinning it to a DS tag means one bump moves them
- * all together instead of five env vars drifting apart. The human-readable
- * record is facts/infra.yml#r2.buckets.ccd-identity.
+ * all together instead of five env vars drifting apart. Since 2026-09-15 the
+ * avatars live in the private Supabase Storage bucket ccd-identity, recorded at
+ * facts/infra.yml#supabase.storage.ccd-identity, and this r2.dev URL answered
+ * 401 when read on 2026-10-09.
  */
 export const AVATAR_BASE = 'https://pub-2c10352ecb7f4d81a6e143f3ecc6378a.r2.dev';
 
